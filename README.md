@@ -12,7 +12,7 @@
 
  简介：VPS综合性能测试脚本 （包含性能、速度、回程路由）
  
- 首发: https://v2rayssr.com/vpstest.html
+ 首发: https://www.v2rayssr.com/vpstest.html
  
 ==========================================================
 
