@@ -45,7 +45,7 @@ fi
 
 google_ssh(){
 sudo -i
-$systempwd install -y expect
+$systemPackage install -y expect
 green "================================="
  blue "  请设置SSH登录密码，弱密码容易被攻击"
 green "================================="
@@ -67,11 +67,6 @@ green "================================="
 read -s -n1 -p "请按任意键重启VPS ... "
 reboot
 }
-
-
-
-
-
 start_menu(){
     clear
 	green "=========================================================="
@@ -101,5 +96,4 @@ start_menu(){
 	;;
     esac
 }
-
 start_menu
