@@ -56,6 +56,9 @@ vps_zbench(){
 vps_testrace(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && bash testrace.sh
 }
+vps_LemonBenchIntl(){
+        curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
+}
 
 start_menu(){
     clear
@@ -70,9 +73,10 @@ start_menu(){
 	green "=========================================================="
       red " 脚本测速会大量消耗 VPS 流量，请悉知！"
     green "=========================================================="
-     blue " 1. VPS 三网纯测速 （各取部分节点）"
-     blue " 2. VPS 综合性能测试 （包含测速）"
-	 blue " 3. VPS 回程路由 - 四网测试"
+     blue " 1. VPS 三网纯测速    （各取部分节点 - 中文显示）"
+     blue " 2. VPS 综合性能测试  （包含测速 - 英文显示）"
+	 blue " 3. VPS 回程路由     （四网测试 - 英文显示）"
+	 blue " 4. VPS 快速全方位测速（包含性能、回程、速度 - 英文显示）"
    yellow " 0. 退出脚本"
     echo
     read -p "请输入数字:" num
@@ -85,6 +89,9 @@ start_menu(){
 		;;
 		3)
 		vps_testrace
+		;;
+		4)
+		vps_LemonBenchIntl
 		;;
 		0)
 		exit 0
